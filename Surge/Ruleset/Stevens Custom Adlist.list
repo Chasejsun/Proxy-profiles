@@ -1,0 +1,18 @@
+# > NetEase Music
+URL-REGEX,^https?:\/\/interface3?\.music\.163\.com\/eapi\/(ad|abtest|banner|cloudvideo|event|experiment|mlivestream|mlog|msg|socialsquare|sp|store|videotimeline|webcache|hot\/(?!search)|comment\/(banner|hotwall|tips)|content\/exposure\/comment\/banner|(usersafe\/)?pl\/count)
+
+# > Pixiv
+AND,((USER-AGENT,pixiv*), (NOT,((DOMAIN-KEYWORD,pixiv))))
+# >> Pixiv Live
+URL-REGEX,^https?:\/\/app-api\.pixiv\.net\/v1\/live\/
+
+# > Super.cn
+IP-CIDR,112.124.39.61/32,no-resolve
+DOMAIN-SUFFIX,7xl9wf.com2.z0.glb.qiniucdn.com
+URL-REGEX,^http:\/\/182\.92\.244\.70\/d\/json\/
+URL-REGEX,^http:\/\/120\.55\.151\.61:80\/(Sociality|Others|log|V2\/(Global|Public|Haha|splash|Student\/(getAttachmentInfo|getTopInfoById))|Treehole\/V[24]\/(?!.*getCampusNewsV3)|.*Badge)
+URL-REGEX,^http:\/\/qiniu\.myfriday\.cn\/xiaozitiao\/
+
+# > Zhihu
+USER-AGENT,AVOS*
+AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))

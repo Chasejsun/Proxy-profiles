@@ -15,4 +15,4 @@ URL-REGEX,^http:\/\/qiniu\.myfriday\.cn\/xiaozitiao\/
 
 # > Zhihu
 USER-AGENT,AVOS*
-AND,((USER-AGENT,osee2*), (NOT,((DOMAIN-SUFFIX,zhihu.com))), (NOT,((DOMAIN-SUFFIX,zhimg.com))))
+DOMAIN,appcloud2.zhihu.com
